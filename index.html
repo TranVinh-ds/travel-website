@@ -15,33 +15,40 @@
     <title>Travel Website</title>
   </head>
   <body>
-    <section class="showcase">
+    <section class="showcase active">
       <header>
-        <h2 class="logo">Travel</h2>
-        <div class="toggle"></div>
+        <h2 class="logo">Vinh Travel Agency</h2>
+        <div class="toggle active"></div>
       </header>
       <video
         src="https://media.istockphoto.com/videos/aerial-view-flying-over-hawaian-canoes-towards-beautiful-green-and-video-id533276962"
         muted
         loop
         autoplay
-      </video>
+      ></video>
+
       <div class="overlay"></div>
       <div class="text">
         <h2>Never Stop</h2>
-        <h3>Exploring The World</h3>
+        <h3>Exploring Asian Beach</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
-          accusamus culpa rerum dolores totam exercitationem facere ratione
-          pariatur suscipit laborum.
+          The Best Places To Spend Your Holidays. All Kinds Of Fantastic Beach
+          Activities. Indulge Yourself With Beautiful Natural Environment In
+          These Amazing Beach In This World.
         </p>
         <a href="#">Explore</a>
       </div>
 
       <ul class="social">
-        <li><i class="fa-brands fa-facebook"></i></li>
-        <li><i class="fa-brands fa-twitter"></i></li>
-        <li><i class="fa-brands fa-square-instagram"></i></li>
+        <li>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-twitter fa-lg"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+        </li>
       </ul>
     </section>
     <div class="menu">
@@ -53,5 +60,15 @@
         <li><a href="#">Contact Us</a></li>
       </ul>
     </div>
+
+    <script>
+      const menuToggle = document.querySelector('.toggle');
+      const showcase = document.querySelector('.showcase');
+
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+      });
+    </script>
   </body>
 </html>
